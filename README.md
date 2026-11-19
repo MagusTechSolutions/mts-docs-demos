@@ -11,13 +11,13 @@ No. The files under [docs](docs/) are pages to import into Outline. The folders 
 
 For an application such as FastAPI:
 
-1. Copy the contents of [examples/python-fastapi](examples/python-fastapi/) into a **new, separate Git repository**.
+1. Copy the contents of [examples/python-fastapi](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/python-fastapi) into a **new, separate Git repository**.
 2. Keep `Jenkinsfile`, `pipeline.yml`, and `Dockerfile` at the repository root.
 3. Update `app` in `pipeline.yml`; keep `project: demo` for this learning project space.
 4. Commit and configure the new repository as a Jenkins Pipeline or Multibranch Pipeline.
 5. Do not import the starter source code into the Outline page. Link to or attach the example repository instead.
 
-The tagged [Jenkinsfile](examples/python-fastapi/Jenkinsfile) is therefore a real pipeline entry point. Jenkins reads it from the root of the FastAPI repository, loads `mts-jenkins-lib`, reads that repository's `pipeline.yml`, and performs the selected build.
+The tagged [Jenkinsfile](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/Jenkinsfile) is therefore a real pipeline entry point. Jenkins reads it from the root of the FastAPI repository, loads `mts-jenkins-lib`, reads that repository's `pipeline.yml`, and performs the selected build.
 
 ### Browser IDE pages
 
@@ -26,7 +26,9 @@ Each starter also has a self-contained page under [docs/code-browser](docs/code-
 - a visual file tree;
 - collapsible `<details>` panels;
 - the complete content of every file;
-- the exact path where each copied file belongs.
+- the exact path where each copied file belongs;
+- links to view or download each file from the public GitHub repository;
+- a link to browse the full starter and download the repository ZIP.
 
 After changing an example, regenerate the browser pages:
 
@@ -34,7 +36,11 @@ After changing an example, regenerate the browser pages:
 python scripts/generate_code_browsers.py
 ```
 
-The browser pages are fully self-contained. Readers copy a code block and save it at the displayed path. Repository or ZIP download links can be added later without changing the embedded source.
+The browser pages are self-contained and include direct GitHub links for convenience. Readers may copy a code block, use the raw-file download link, or browse the complete starter at:
+
+```text
+https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples
+```
 
 ## Learning paths
 

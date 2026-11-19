@@ -1,6 +1,6 @@
 # 💻 Browser IDE: Python FastAPI
 
-Welcome to the copyable source browser for the [Python FastAPI tutorial](../14-jenkins-python-fastapi.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [Python FastAPI tutorial](../14-jenkins-python-fastapi.md). Expand a file to read or copy it. Each file also includes GitHub view and raw download links.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.
@@ -20,21 +20,21 @@ Welcome to the copyable source browser for the [Python FastAPI tutorial](../14-j
 │   └── 📄 test_main.py
 ```
 
-## Save the complete starter
+[Browse the complete `python-fastapi` starter on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/python-fastapi) · [Download the repository as a ZIP](https://github.com/MagusTechSolutions/mts-docs-demos/archive/refs/heads/master.zip)
+
+## Use the complete starter
 
 1. Create a local folder named `python-fastapi`.
-2. Expand each file below.
-3. Copy its code block into a file at the exact displayed path.
+2. Expand and copy each file below, or download it from its raw link.
+3. Save it at the exact displayed path.
 4. Commit the copied folder as the root of a new application repository.
-
-A separate whole-folder ZIP/download link can be added later without changing any of the source shown on this page.
 
 ## Files
 
 <details>
 <summary><strong>📄 app/__init__.py</strong></summary>
 
-**Save as:** `app/__init__.py`
+**Save as:** `app/__init__.py` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/app/__init__.py) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/app/__init__.py)
 
 ```python
 """MTS FastAPI demo package."""
@@ -45,7 +45,7 @@ A separate whole-folder ZIP/download link can be added later without changing an
 <details>
 <summary><strong>📄 app/main.py</strong></summary>
 
-**Save as:** `app/main.py`
+**Save as:** `app/main.py` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/app/main.py) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/app/main.py)
 
 ```python
 from fastapi import FastAPI
@@ -68,7 +68,7 @@ def health() -> dict[str, str]:
 <details>
 <summary><strong>📄 Dockerfile</strong></summary>
 
-**Save as:** `Dockerfile`
+**Save as:** `Dockerfile` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/Dockerfile) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/Dockerfile)
 
 ```dockerfile
 FROM python:3.11-slim
@@ -87,7 +87,7 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 <details>
 <summary><strong>📄 Jenkinsfile</strong></summary>
 
-**Save as:** `Jenkinsfile`
+**Save as:** `Jenkinsfile` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/Jenkinsfile) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/Jenkinsfile)
 
 ```groovy
 library identifier: 'buildPipeline@master',
@@ -105,7 +105,7 @@ buildPipeline(configFile: 'pipeline.yml')
 <details>
 <summary><strong>📄 pipeline.yml</strong></summary>
 
-**Save as:** `pipeline.yml`
+**Save as:** `pipeline.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/pipeline.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/pipeline.yml)
 
 ```yaml
 app: demo-fastapi
@@ -139,7 +139,7 @@ environments:
 <details>
 <summary><strong>📄 pyproject.toml</strong></summary>
 
-**Save as:** `pyproject.toml`
+**Save as:** `pyproject.toml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/pyproject.toml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/pyproject.toml)
 
 ```toml
 [build-system]
@@ -160,7 +160,7 @@ packages = ["app"]
 <details>
 <summary><strong>📄 requirements.txt</strong></summary>
 
-**Save as:** `requirements.txt`
+**Save as:** `requirements.txt` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/requirements.txt) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/requirements.txt)
 
 ```text
 fastapi==0.121.2
@@ -175,7 +175,7 @@ pytest-cov==7.0.0
 <details>
 <summary><strong>📄 test_main.py</strong></summary>
 
-**Save as:** `test_main.py`
+**Save as:** `test_main.py` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/python-fastapi/test_main.py) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/python-fastapi/test_main.py)
 
 ```python
 from fastapi.testclient import TestClient

@@ -1,6 +1,6 @@
 # 💻 Browser IDE: KubeBlocks data services
 
-Welcome to the copyable source browser for the [KubeBlocks data services tutorial](../10-kubeblocks-databases.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [KubeBlocks data services tutorial](../10-kubeblocks-databases.md). Expand a file to read or copy it. Each file also includes GitHub view and raw download links.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.
@@ -19,21 +19,21 @@ Welcome to the copyable source browser for the [KubeBlocks data services tutoria
 │   └── 📄 redis-service.yml
 ```
 
-## Save the complete starter
+[Browse the complete `kubeblocks` starter on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/kubeblocks) · [Download the repository as a ZIP](https://github.com/MagusTechSolutions/mts-docs-demos/archive/refs/heads/master.zip)
+
+## Use the complete starter
 
 1. Create a local folder named `kubeblocks`.
-2. Expand each file below.
-3. Copy its code block into a file at the exact displayed path.
+2. Expand and copy each file below, or download it from its raw link.
+3. Save it at the exact displayed path.
 4. Commit the copied folder as the root of a new application repository.
-
-A separate whole-folder ZIP/download link can be added later without changing any of the source shown on this page.
 
 ## Files
 
 <details>
 <summary><strong>📄 minio-bucket-job.yml</strong></summary>
 
-**Save as:** `minio-bucket-job.yml`
+**Save as:** `minio-bucket-job.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/minio-bucket-job.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/minio-bucket-job.yml)
 
 ```yaml
 apiVersion: batch/v1
@@ -88,7 +88,7 @@ spec:
 <details>
 <summary><strong>📄 minio-cluster.yml</strong></summary>
 
-**Save as:** `minio-cluster.yml`
+**Save as:** `minio-cluster.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/minio-cluster.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/minio-cluster.yml)
 
 ```yaml
 apiVersion: apps.kubeblocks.io/v1
@@ -125,7 +125,7 @@ spec:
 <details>
 <summary><strong>📄 minio-service.yml</strong></summary>
 
-**Save as:** `minio-service.yml`
+**Save as:** `minio-service.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/minio-service.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/minio-service.yml)
 
 ```yaml
 apiVersion: v1
@@ -149,7 +149,7 @@ spec:
 <details>
 <summary><strong>📄 postgres-cluster.yml</strong></summary>
 
-**Save as:** `postgres-cluster.yml`
+**Save as:** `postgres-cluster.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/postgres-cluster.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/postgres-cluster.yml)
 
 ```yaml
 apiVersion: apps.kubeblocks.io/v1
@@ -188,7 +188,7 @@ spec:
 <details>
 <summary><strong>📄 postgres-service.yml</strong></summary>
 
-**Save as:** `postgres-service.yml`
+**Save as:** `postgres-service.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/postgres-service.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/postgres-service.yml)
 
 ```yaml
 apiVersion: v1
@@ -213,7 +213,7 @@ spec:
 <details>
 <summary><strong>📄 README.md</strong></summary>
 
-**Save as:** `README.md`
+**Save as:** `README.md` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/README.md) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/README.md)
 
 ```markdown
 # KubeBlocks demo manifests
@@ -244,7 +244,7 @@ kubectl -n demo apply -f minio-bucket-job.yml
 <details>
 <summary><strong>📄 redis-cluster.yml</strong></summary>
 
-**Save as:** `redis-cluster.yml`
+**Save as:** `redis-cluster.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/redis-cluster.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/redis-cluster.yml)
 
 ```yaml
 apiVersion: apps.kubeblocks.io/v1
@@ -283,7 +283,7 @@ spec:
 <details>
 <summary><strong>📄 redis-service.yml</strong></summary>
 
-**Save as:** `redis-service.yml`
+**Save as:** `redis-service.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/kubeblocks/redis-service.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/kubeblocks/redis-service.yml)
 
 ```yaml
 apiVersion: v1

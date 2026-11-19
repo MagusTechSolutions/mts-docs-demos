@@ -12,7 +12,7 @@ flowchart LR
   ConfigMap[HTML content] --> Pod1
 ```
 
-Use the copyable files in [examples/nginx](../examples/nginx/).
+Use the copyable files in [examples/nginx](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/nginx).
 
 > **Prefer a browser IDE?** Open the [NGINX source browser](code-browser/nginx.md) to expand, copy, and save every starter file without leaving the tutorial.
 
@@ -63,7 +63,7 @@ kubectl -n demo exec deploy/demo-nginx -- nginx -T
 
 ## 6. Update the page
 
-Edit the `index.html` entry in [configmap.yml](../examples/nginx/configmap.yml), then:
+Edit the `index.html` entry in [configmap.yml](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/nginx/configmap.yml), then:
 
 ```bash
 kubectl -n demo apply -f examples/nginx/configmap.yml

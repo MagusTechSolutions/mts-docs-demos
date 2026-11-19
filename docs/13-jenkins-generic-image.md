@@ -2,7 +2,7 @@
 
 Use the generic pipeline when the build is not Java, Node, Python, or Helm—but you can still produce a Docker image from the repository root.
 
-The full starter is in [examples/generic-image](../examples/generic-image/).
+The full starter is in [examples/generic-image](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/generic-image).
 
 > **Open the starter in a browser IDE:** [Generic image source browser](code-browser/generic-image.md). You can expand, copy, and save every file.
 

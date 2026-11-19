@@ -1,6 +1,6 @@
 # 💻 Browser IDE: Node.js
 
-Welcome to the copyable source browser for the [Node.js tutorial](../12-jenkins-node.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [Node.js tutorial](../12-jenkins-node.md). Expand a file to read or copy it. Each file also includes GitHub view and raw download links.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.
@@ -20,21 +20,21 @@ Welcome to the copyable source browser for the [Node.js tutorial](../12-jenkins-
 │   │   └── 📄 app.test.js
 ```
 
-## Save the complete starter
+[Browse the complete `node` starter on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/node) · [Download the repository as a ZIP](https://github.com/MagusTechSolutions/mts-docs-demos/archive/refs/heads/master.zip)
+
+## Use the complete starter
 
 1. Create a local folder named `node`.
-2. Expand each file below.
-3. Copy its code block into a file at the exact displayed path.
+2. Expand and copy each file below, or download it from its raw link.
+3. Save it at the exact displayed path.
 4. Commit the copied folder as the root of a new application repository.
-
-A separate whole-folder ZIP/download link can be added later without changing any of the source shown on this page.
 
 ## Files
 
 <details>
 <summary><strong>📄 Dockerfile</strong></summary>
 
-**Save as:** `Dockerfile`
+**Save as:** `Dockerfile` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/node/Dockerfile) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/node/Dockerfile)
 
 ```dockerfile
 FROM node:20-alpine
@@ -53,7 +53,7 @@ CMD ["npm", "start"]
 <details>
 <summary><strong>📄 Jenkinsfile</strong></summary>
 
-**Save as:** `Jenkinsfile`
+**Save as:** `Jenkinsfile` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/node/Jenkinsfile) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/node/Jenkinsfile)
 
 ```groovy
 library identifier: 'buildPipeline@master',
@@ -71,7 +71,7 @@ buildPipeline(configFile: 'pipeline.yml')
 <details>
 <summary><strong>📄 package.json</strong></summary>
 
-**Save as:** `package.json`
+**Save as:** `package.json` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/node/package.json) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/node/package.json)
 
 ```json
 {
@@ -94,7 +94,7 @@ buildPipeline(configFile: 'pipeline.yml')
 <details>
 <summary><strong>📄 pipeline.yml</strong></summary>
 
-**Save as:** `pipeline.yml`
+**Save as:** `pipeline.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/node/pipeline.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/node/pipeline.yml)
 
 ```yaml
 app: demo-node
@@ -134,7 +134,7 @@ environments:
 <details>
 <summary><strong>📄 src/app.js</strong></summary>
 
-**Save as:** `src/app.js`
+**Save as:** `src/app.js` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/node/src/app.js) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/node/src/app.js)
 
 ```javascript
 import http from "node:http";
@@ -158,7 +158,7 @@ export function createServer() {
 <details>
 <summary><strong>📄 src/server.js</strong></summary>
 
-**Save as:** `src/server.js`
+**Save as:** `src/server.js` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/node/src/server.js) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/node/src/server.js)
 
 ```javascript
 import { createServer } from "./app.js";
@@ -176,7 +176,7 @@ server.listen(port, "0.0.0.0", () => {
 <details>
 <summary><strong>📄 test/app.test.js</strong></summary>
 
-**Save as:** `test/app.test.js`
+**Save as:** `test/app.test.js` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/node/test/app.test.js) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/node/test/app.test.js)
 
 ```javascript
 import assert from "node:assert/strict";

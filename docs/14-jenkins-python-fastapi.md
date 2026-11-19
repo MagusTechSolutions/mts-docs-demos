@@ -2,7 +2,7 @@
 
 Build a production-shaped FastAPI image with a predictable test and container workflow.
 
-Use [examples/python-fastapi](../examples/python-fastapi/) as the complete starter.
+Use [examples/python-fastapi](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/python-fastapi) as the complete starter.
 
 > **Open the starter in a browser IDE:** [FastAPI source browser](code-browser/python-fastapi.md). You can expand, copy, and save every file, including the tagged `Jenkinsfile`.
 

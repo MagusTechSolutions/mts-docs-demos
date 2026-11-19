@@ -19,7 +19,7 @@ The MTS S3 reference uses two stages:
 1. `bakeManifest` with `KUSTOMIZE4`
 2. `deployManifest` for the Kubernetes provider
 
-A complete copyable template is available in [examples/spinnaker](../examples/spinnaker/).
+A complete copyable template is available in [examples/spinnaker](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/spinnaker).
 
 > **Open the starter in a browser IDE:** [Spinnaker source browser](code-browser/spinnaker.md). Expand, copy, or save the pipeline and every Kustomize file.
 

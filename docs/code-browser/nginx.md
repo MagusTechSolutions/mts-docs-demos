@@ -1,6 +1,6 @@
 # 💻 Browser IDE: NGINX static site
 
-Welcome to the copyable source browser for the [NGINX static site tutorial](../17-nginx-static-site.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [NGINX static site tutorial](../17-nginx-static-site.md). Expand a file to read or copy it. Each file also includes GitHub view and raw download links.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.
@@ -14,21 +14,21 @@ Welcome to the copyable source browser for the [NGINX static site tutorial](../1
 │   └── 📄 service.yml
 ```
 
-## Save the complete starter
+[Browse the complete `nginx` starter on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/nginx) · [Download the repository as a ZIP](https://github.com/MagusTechSolutions/mts-docs-demos/archive/refs/heads/master.zip)
+
+## Use the complete starter
 
 1. Create a local folder named `nginx`.
-2. Expand each file below.
-3. Copy its code block into a file at the exact displayed path.
+2. Expand and copy each file below, or download it from its raw link.
+3. Save it at the exact displayed path.
 4. Commit the copied folder as the root of a new application repository.
-
-A separate whole-folder ZIP/download link can be added later without changing any of the source shown on this page.
 
 ## Files
 
 <details>
 <summary><strong>📄 configmap.yml</strong></summary>
 
-**Save as:** `configmap.yml`
+**Save as:** `configmap.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/nginx/configmap.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/nginx/configmap.yml)
 
 ```yaml
 apiVersion: v1
@@ -61,7 +61,7 @@ data:
 <details>
 <summary><strong>📄 deployment.yml</strong></summary>
 
-**Save as:** `deployment.yml`
+**Save as:** `deployment.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/nginx/deployment.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/nginx/deployment.yml)
 
 ```yaml
 apiVersion: apps/v1
@@ -122,7 +122,7 @@ spec:
 <details>
 <summary><strong>📄 service.yml</strong></summary>
 
-**Save as:** `service.yml`
+**Save as:** `service.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/nginx/service.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/nginx/service.yml)
 
 ```yaml
 apiVersion: v1

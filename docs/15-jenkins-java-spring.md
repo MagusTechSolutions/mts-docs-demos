@@ -2,7 +2,7 @@
 
 Let's build and containerize a tiny Spring Boot service using the MTS Java pipeline.
 
-Use [examples/java-spring](../examples/java-spring/) as a complete starting point.
+Use [examples/java-spring](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/java-spring) as a complete starting point.
 
 > **Open the starter in a browser IDE:** [Java Spring source browser](code-browser/java-spring.md). You can expand, copy, and save every file.
 
@@ -22,7 +22,7 @@ curl http://localhost:8080/actuator/health
 
 ## 2. Review the MTS contract
 
-[`pipeline.yml`](../examples/java-spring/pipeline.yml):
+[`pipeline.yml`](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/java-spring/pipeline.yml):
 
 ```yaml
 app: demo-spring

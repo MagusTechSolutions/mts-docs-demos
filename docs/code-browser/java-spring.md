@@ -1,6 +1,6 @@
 # 💻 Browser IDE: Java Spring Boot
 
-Welcome to the copyable source browser for the [Java Spring Boot tutorial](../15-jenkins-java-spring.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [Java Spring Boot tutorial](../15-jenkins-java-spring.md). Expand a file to read or copy it. Each file also includes GitHub view and raw download links.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.
@@ -28,21 +28,21 @@ Welcome to the copyable source browser for the [Java Spring Boot tutorial](../15
 │   │   │   │   │   │   │   └── 📄 DemoApplicationTests.java
 ```
 
-## Save the complete starter
+[Browse the complete `java-spring` starter on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/java-spring) · [Download the repository as a ZIP](https://github.com/MagusTechSolutions/mts-docs-demos/archive/refs/heads/master.zip)
+
+## Use the complete starter
 
 1. Create a local folder named `java-spring`.
-2. Expand each file below.
-3. Copy its code block into a file at the exact displayed path.
+2. Expand and copy each file below, or download it from its raw link.
+3. Save it at the exact displayed path.
 4. Commit the copied folder as the root of a new application repository.
-
-A separate whole-folder ZIP/download link can be added later without changing any of the source shown on this page.
 
 ## Files
 
 <details>
 <summary><strong>📄 Dockerfile</strong></summary>
 
-**Save as:** `Dockerfile`
+**Save as:** `Dockerfile` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/java-spring/Dockerfile) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/java-spring/Dockerfile)
 
 ```dockerfile
 FROM maven:3.9.11-amazoncorretto-21 AS build
@@ -63,7 +63,7 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 <details>
 <summary><strong>📄 Jenkinsfile</strong></summary>
 
-**Save as:** `Jenkinsfile`
+**Save as:** `Jenkinsfile` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/java-spring/Jenkinsfile) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/java-spring/Jenkinsfile)
 
 ```groovy
 library identifier: 'buildPipeline@master',
@@ -81,7 +81,7 @@ buildPipeline(configFile: 'pipeline.yml')
 <details>
 <summary><strong>📄 pipeline.yml</strong></summary>
 
-**Save as:** `pipeline.yml`
+**Save as:** `pipeline.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/java-spring/pipeline.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/java-spring/pipeline.yml)
 
 ```yaml
 app: demo-spring
@@ -127,7 +127,7 @@ environments:
 <details>
 <summary><strong>📄 pom.xml</strong></summary>
 
-**Save as:** `pom.xml`
+**Save as:** `pom.xml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/java-spring/pom.xml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/java-spring/pom.xml)
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -178,7 +178,7 @@ environments:
 <details>
 <summary><strong>📄 src/main/java/net/mtslab/demo/DemoApplication.java</strong></summary>
 
-**Save as:** `src/main/java/net/mtslab/demo/DemoApplication.java`
+**Save as:** `src/main/java/net/mtslab/demo/DemoApplication.java` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/java-spring/src/main/java/net/mtslab/demo/DemoApplication.java) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/java-spring/src/main/java/net/mtslab/demo/DemoApplication.java)
 
 ```java
 package net.mtslab.demo;
@@ -213,7 +213,7 @@ public class DemoApplication {
 <details>
 <summary><strong>📄 src/test/java/net/mtslab/demo/DemoApplicationTests.java</strong></summary>
 
-**Save as:** `src/test/java/net/mtslab/demo/DemoApplicationTests.java`
+**Save as:** `src/test/java/net/mtslab/demo/DemoApplicationTests.java` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/java-spring/src/test/java/net/mtslab/demo/DemoApplicationTests.java) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/java-spring/src/test/java/net/mtslab/demo/DemoApplicationTests.java)
 
 ```java
 package net.mtslab.demo;

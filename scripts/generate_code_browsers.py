@@ -6,14 +6,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXAMPLES = ROOT / "examples"
 OUTPUT = ROOT / "docs" / "code-browser"
+REPOSITORY = "https://github.com/MagusTechSolutions/mts-docs-demos"
+DEFAULT_BRANCH = "master"
 STARTERS = {
-    "nginx": ("02-nginx-static-site", "NGINX static site"),
-    "java-spring": ("04-jenkins-java-spring", "Java Spring Boot"),
-    "python-fastapi": ("05-jenkins-python-fastapi", "Python FastAPI"),
-    "generic-image": ("06-jenkins-generic-image", "Generic image"),
-    "node": ("07-jenkins-node", "Node.js"),
-    "spinnaker": ("08-spinnaker-kubernetes", "Spinnaker and Kubernetes"),
-    "kubeblocks": ("09-kubeblocks-databases", "KubeBlocks data services"),
+    "nginx": ("17-nginx-static-site", "NGINX static site"),
+    "java-spring": ("15-jenkins-java-spring", "Java Spring Boot"),
+    "python-fastapi": ("14-jenkins-python-fastapi", "Python FastAPI"),
+    "generic-image": ("13-jenkins-generic-image", "Generic image"),
+    "node": ("12-jenkins-node", "Node.js"),
+    "spinnaker": ("11-spinnaker-kubernetes", "Spinnaker and Kubernetes"),
+    "kubeblocks": ("10-kubeblocks-databases", "KubeBlocks data services"),
 }
 
 LANGUAGES = {
@@ -61,6 +63,24 @@ def tree_lines(paths: list[Path]) -> list[str]:
     return lines
 
 
+def starter_url(starter: str) -> str:
+    return f"{REPOSITORY}/tree/{DEFAULT_BRANCH}/examples/{starter}"
+
+
+def file_url(starter: str, relative: Path) -> str:
+    return (
+        f"{REPOSITORY}/blob/{DEFAULT_BRANCH}/examples/"
+        f"{starter}/{relative.as_posix()}"
+    )
+
+
+def raw_file_url(starter: str, relative: Path) -> str:
+    return (
+        f"{REPOSITORY}/raw/refs/heads/{DEFAULT_BRANCH}/examples/"
+        f"{starter}/{relative.as_posix()}"
+    )
+
+
 def generate(starter: str, page_id: str, title: str) -> None:
     source = EXAMPLES / starter
     files = sorted(
@@ -75,8 +95,8 @@ def generate(starter: str, page_id: str, title: str) -> None:
         f"# 💻 Browser IDE: {title}",
         "",
         f"Welcome to the copyable source browser for the [{title} tutorial]({tutorial}). "
-        "Expand a file to read it. Select the code block's copy action, then save it using "
-        "the displayed path.",
+        "Expand a file to read or copy it. Each file also includes GitHub view and raw "
+        "download links.",
         "",
         "> [!NOTE]\n"
         "> This page requires no JavaScript. If Outline removes HTML details elements, "
@@ -88,15 +108,15 @@ def generate(starter: str, page_id: str, title: str) -> None:
         *tree,
         "```",
         "",
-        "## Save the complete starter",
+        f"[Browse the complete `{starter}` starter on GitHub]({starter_url(starter)}) · "
+        f"[Download the repository as a ZIP]({REPOSITORY}/archive/refs/heads/{DEFAULT_BRANCH}.zip)",
+        "",
+        "## Use the complete starter",
         "",
         f"1. Create a local folder named `{starter}`.",
-        "2. Expand each file below.",
-        "3. Copy its code block into a file at the exact displayed path.",
+        "2. Expand and copy each file below, or download it from its raw link.",
+        "3. Save it at the exact displayed path.",
         "4. Commit the copied folder as the root of a new application repository.",
-        "",
-        "A separate whole-folder ZIP/download link can be added later without changing "
-        "any of the source shown on this page.",
         "",
         "## Files",
         "",
@@ -110,7 +130,9 @@ def generate(starter: str, page_id: str, title: str) -> None:
                 "<details>",
                 f"<summary><strong>📄 {escape_summary(relative)}</strong></summary>",
                 "",
-                f"**Save as:** `{relative.as_posix()}`",
+                f"**Save as:** `{relative.as_posix()}` · "
+                f"[View on GitHub]({file_url(starter, relative)}) · "
+                f"[Download raw file]({raw_file_url(starter, relative)})",
                 "",
                 f"```{fence}",
                 content,

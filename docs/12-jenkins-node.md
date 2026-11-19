@@ -2,7 +2,7 @@
 
 This demo creates a tiny Node HTTP service, tests it with Node's built-in test runner, and builds an image with the MTS Node pipeline.
 
-Use [examples/node](../examples/node/) as the complete starter.
+Use [examples/node](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/node) as the complete starter.
 
 > **Open the starter in a browser IDE:** [Node.js source browser](code-browser/node.md). You can expand, copy, and save every file.
 

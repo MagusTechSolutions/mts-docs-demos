@@ -1,6 +1,6 @@
 # 💻 Browser IDE: Spinnaker and Kubernetes
 
-Welcome to the copyable source browser for the [Spinnaker and Kubernetes tutorial](../11-spinnaker-kubernetes.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [Spinnaker and Kubernetes tutorial](../11-spinnaker-kubernetes.md). Expand a file to read or copy it. Each file also includes GitHub view and raw download links.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.
@@ -21,21 +21,21 @@ Welcome to the copyable source browser for the [Spinnaker and Kubernetes tutoria
 │   └── 📄 README.md
 ```
 
-## Save the complete starter
+[Browse the complete `spinnaker` starter on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/tree/master/examples/spinnaker) · [Download the repository as a ZIP](https://github.com/MagusTechSolutions/mts-docs-demos/archive/refs/heads/master.zip)
+
+## Use the complete starter
 
 1. Create a local folder named `spinnaker`.
-2. Expand each file below.
-3. Copy its code block into a file at the exact displayed path.
+2. Expand and copy each file below, or download it from its raw link.
+3. Save it at the exact displayed path.
 4. Commit the copied folder as the root of a new application repository.
-
-A separate whole-folder ZIP/download link can be added later without changing any of the source shown on this page.
 
 ## Files
 
 <details>
 <summary><strong>📄 demo-app/base/deployment.yml</strong></summary>
 
-**Save as:** `demo-app/base/deployment.yml`
+**Save as:** `demo-app/base/deployment.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/spinnaker/demo-app/base/deployment.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/spinnaker/demo-app/base/deployment.yml)
 
 ```yaml
 apiVersion: apps/v1
@@ -97,7 +97,7 @@ spec:
 <details>
 <summary><strong>📄 demo-app/base/kustomization.yml</strong></summary>
 
-**Save as:** `demo-app/base/kustomization.yml`
+**Save as:** `demo-app/base/kustomization.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/spinnaker/demo-app/base/kustomization.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/spinnaker/demo-app/base/kustomization.yml)
 
 ```yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
@@ -112,7 +112,7 @@ resources:
 <details>
 <summary><strong>📄 demo-app/base/service.yml</strong></summary>
 
-**Save as:** `demo-app/base/service.yml`
+**Save as:** `demo-app/base/service.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/spinnaker/demo-app/base/service.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/spinnaker/demo-app/base/service.yml)
 
 ```yaml
 apiVersion: v1
@@ -137,7 +137,7 @@ spec:
 <details>
 <summary><strong>📄 demo-app/overlays/dev/kustomization.yml</strong></summary>
 
-**Save as:** `demo-app/overlays/dev/kustomization.yml`
+**Save as:** `demo-app/overlays/dev/kustomization.yml` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/spinnaker/demo-app/overlays/dev/kustomization.yml) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/spinnaker/demo-app/overlays/dev/kustomization.yml)
 
 ```yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
@@ -157,7 +157,7 @@ images:
 <details>
 <summary><strong>📄 pipeline.json</strong></summary>
 
-**Save as:** `pipeline.json`
+**Save as:** `pipeline.json` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/spinnaker/pipeline.json) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/spinnaker/pipeline.json)
 
 ```json
 {
@@ -260,7 +260,7 @@ images:
 <details>
 <summary><strong>📄 README.md</strong></summary>
 
-**Save as:** `README.md`
+**Save as:** `README.md` · [View on GitHub](https://github.com/MagusTechSolutions/mts-docs-demos/blob/master/examples/spinnaker/README.md) · [Download raw file](https://github.com/MagusTechSolutions/mts-docs-demos/raw/refs/heads/master/examples/spinnaker/README.md)
 
 ```markdown
 # Spinnaker Kubernetes starter
