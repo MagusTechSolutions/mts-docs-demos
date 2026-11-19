@@ -1,0 +1,94 @@
+{
+  "application": "demo",
+  "name": "Deploy demo application",
+  "description": "Bake and deploy the demo application with Kustomize.",
+  "keepWaitingPipelines": false,
+  "limitConcurrent": true,
+  "spelEvaluator": "v4",
+  "parameterConfig": [
+    {
+      "name": "namespace",
+      "label": "Kubernetes namespace",
+      "description": "Namespace receiving the demo application.",
+      "default": "demo",
+      "required": true
+    },
+    {
+      "name": "appname",
+      "label": "Application name",
+      "description": "Name inserted into deployment manifests.",
+      "default": "demo-node",
+      "required": true
+    },
+    {
+      "name": "image",
+      "label": "Immutable image reference",
+      "description": "Digest-pinned image supplied by Jenkins.",
+      "default": "",
+      "required": true
+    }
+  ],
+  "stages": [
+    {
+      "name": "Bake demo manifests",
+      "type": "bakeManifest",
+      "refId": "bake",
+      "requisiteStageRefIds": [],
+      "templateRenderer": "KUSTOMIZE4",
+      "kustomizeFilePath": "demo-app/overlays/dev/kustomization.yml",
+      "outputName": "demo-baked-manifests",
+      "namespace": "${parameters.namespace}",
+      "evaluateOverrideExpressions": true,
+      "inputArtifact": {
+        "account": "REPLACE_WITH_GIT_ARTIFACT_ACCOUNT",
+        "id": null,
+        "artifact": {
+          "artifactAccount": "REPLACE_WITH_GIT_ARTIFACT_ACCOUNT",
+          "name": "mts-labs-deployment-configs",
+          "reference": "REPLACE_WITH_DEPLOYMENT_REPOSITORY_URL",
+          "type": "git/repo",
+          "version": "main"
+        }
+      },
+      "expectedArtifacts": [
+        {
+          "defaultArtifact": {
+            "customKind": false,
+            "id": "REPLACE_WITH_EXPECTED_ARTIFACT_ID",
+            "name": "demo-baked-manifests",
+            "type": "embedded/base64"
+          },
+          "displayName": "Demo baked manifests",
+          "id": "REPLACE_WITH_EXPECTED_ARTIFACT_ID",
+          "matchArtifact": {
+            "id": "REPLACE_WITH_EXPECTED_ARTIFACT_ID",
+            "name": "demo-baked-manifests",
+            "type": "embedded/base64"
+          },
+          "useDefaultArtifact": false,
+          "usePriorArtifact": false
+        }
+      ]
+    },
+    {
+      "name": "Deploy demo manifests",
+      "type": "deployManifest",
+      "refId": "deploy",
+      "requisiteStageRefIds": [
+        "bake"
+      ],
+      "cloudProvider": "kubernetes",
+      "account": "REPLACE_WITH_KUBERNETES_ACCOUNT",
+      "source": "artifact",
+      "manifestArtifactId": "REPLACE_WITH_EXPECTED_ARTIFACT_ID",
+      "manifestArtifactAccount": "embedded-artifact",
+      "requiredArtifactIds": [],
+      "requiredArtifacts": [],
+      "skipExpressionEvaluation": false
+    }
+  ],
+  "triggers": [],
+  "notifications": [],
+  "parallel": false
+}
+

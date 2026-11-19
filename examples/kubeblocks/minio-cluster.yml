@@ -1,0 +1,28 @@
+apiVersion: apps.kubeblocks.io/v1
+kind: Cluster
+metadata:
+  name: demo-minio
+  namespace: demo
+spec:
+  terminationPolicy: DoNotTerminate
+  componentSpecs:
+    - name: minio
+      componentDef: minio
+      replicas: 2
+      resources:
+        requests:
+          cpu: 100m
+          memory: 256Mi
+        limits:
+          cpu: 500m
+          memory: 512Mi
+      volumeClaimTemplates:
+        - name: data
+          spec:
+            storageClassName: truenas-nfs
+            accessModes:
+              - ReadWriteOnce
+            resources:
+              requests:
+                storage: 15Gi
+

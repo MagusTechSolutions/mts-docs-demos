@@ -1,0 +1,37 @@
+app: demo-spring
+stack: java
+project: demo
+
+custom:
+  build_commands:
+    - "mvn -B clean test"
+
+artifacts:
+  - 'target/*.jar'
+  - 'imageRef.properties'
+  - 'pipeline.properties'
+
+spinnaker_app: demo-spring
+environments:
+  - name: feature/
+    deploy: true
+    spinnaker:
+      pipeline: deploy-dev
+      parameters:
+        namespace: demo
+        appname: demo-spring
+  - name: develop
+    deploy: true
+    spinnaker:
+      pipeline: deploy-dev
+      parameters:
+        namespace: demo
+        appname: demo-spring
+  - name: master
+    deploy: true
+    spinnaker:
+      pipeline: deploy-prod
+      parameters:
+        namespace: demo
+        appname: demo-spring
+

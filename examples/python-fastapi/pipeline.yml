@@ -1,0 +1,25 @@
+app: demo-fastapi
+stack: python311
+project: demo
+artifacts:
+  - 'coverage.xml'
+  - 'imageRef.properties'
+  - 'pipeline.properties'
+
+spinnaker_app: demo-fastapi
+environments:
+  - name: develop
+    deploy: true
+    spinnaker:
+      pipeline: deploy-dev
+      parameters:
+        namespace: demo
+        appname: demo-fastapi
+  - name: master
+    deploy: true
+    spinnaker:
+      pipeline: deploy-prod
+      parameters:
+        namespace: demo
+        appname: demo-fastapi
+

@@ -1,0 +1,17 @@
+app: demo-image
+stack: generic
+project: demo
+
+custom:
+  pre_build_commands:
+    - "echo \"Preparing demo-image\""
+  build_commands:
+    - "sh scripts/build.sh"
+  post_build_commands:
+    - "cat build/output.txt"
+
+artifacts:
+  - 'build/output.txt'
+  - 'imageRef.properties'
+  - 'pipeline.properties'
+

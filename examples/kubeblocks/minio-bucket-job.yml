@@ -1,0 +1,46 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: demo-minio-buckets
+  namespace: demo
+spec:
+  backoffLimit: 10
+  template:
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: init
+          image: public.ecr.aws/aws-cli/aws-cli:latest
+          env:
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: demo-minio-minio-account-root
+                  key: username
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: demo-minio-minio-account-root
+                  key: password
+            - name: AWS_DEFAULT_REGION
+              value: us-east-1
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              set -eu
+              cat > /tmp/aws-config <<'EOF'
+              [default]
+              s3 =
+                  addressing_style = path
+              EOF
+              export AWS_CONFIG_FILE=/tmp/aws-config
+              endpoint=http://demo-minio:9000
+              until aws --endpoint-url "$endpoint" s3api list-buckets >/dev/null; do
+                sleep 5
+              done
+              for bucket in demo-uploads demo-assets demo-backups; do
+                aws --endpoint-url "$endpoint" s3api head-bucket --bucket "$bucket" \
+                  2>/dev/null || \
+                aws --endpoint-url "$endpoint" s3api create-bucket --bucket "$bucket"
+              done
+

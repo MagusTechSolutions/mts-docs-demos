@@ -1,0 +1,2 @@
+"""MTS FastAPI demo package."""
+

@@ -1,0 +1,31 @@
+app: demo-node
+stack: nodejs
+project: demo
+artifacts:
+  - 'imageRef.properties'
+  - 'pipeline.properties'
+
+spinnaker_app: demo-node
+environments:
+  - name: feature/
+    deploy: true
+    spinnaker:
+      pipeline: deploy-dev
+      parameters:
+        namespace: demo
+        appname: demo-node
+  - name: develop
+    deploy: true
+    spinnaker:
+      pipeline: deploy-dev
+      parameters:
+        namespace: demo
+        appname: demo-node
+  - name: master
+    deploy: true
+    spinnaker:
+      pipeline: deploy-prod
+      parameters:
+        namespace: demo
+        appname: demo-node
+
