@@ -139,10 +139,10 @@ Archive these files by listing them under `artifacts`.
 
 ## Tutorials
 
-- [Java Spring Boot](04-jenkins-java-spring.md)
-- [Python FastAPI](05-jenkins-python-fastapi.md)
-- [Generic image](06-jenkins-generic-image.md)
-- [Node.js](07-jenkins-node.md)
+- [Java Spring Boot](15-jenkins-java-spring.md)
+- [Python FastAPI](14-jenkins-python-fastapi.md)
+- [Generic image](13-jenkins-generic-image.md)
+- [Node.js](12-jenkins-node.md)
 
 ## Topic Q&A
 

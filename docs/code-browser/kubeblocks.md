@@ -1,6 +1,6 @@
 # 💻 Browser IDE: KubeBlocks data services
 
-Welcome to the copyable source browser for the [KubeBlocks data services tutorial](../09-kubeblocks-databases.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [KubeBlocks data services tutorial](../10-kubeblocks-databases.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.

@@ -1,6 +1,6 @@
 # 💻 Browser IDE: Python FastAPI
 
-Welcome to the copyable source browser for the [Python FastAPI tutorial](../05-jenkins-python-fastapi.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [Python FastAPI tutorial](../14-jenkins-python-fastapi.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.

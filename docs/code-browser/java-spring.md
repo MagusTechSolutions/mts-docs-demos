@@ -1,6 +1,6 @@
 # 💻 Browser IDE: Java Spring Boot
 
-Welcome to the copyable source browser for the [Java Spring Boot tutorial](../04-jenkins-java-spring.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [Java Spring Boot tutorial](../15-jenkins-java-spring.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.

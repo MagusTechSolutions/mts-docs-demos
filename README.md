@@ -40,19 +40,19 @@ The browser pages are fully self-contained. Readers copy a code block and save i
 
 | Path | Goal | Pages |
 |---|---|---|
-| 🚀 Platform start | Understand the MTS application-delivery flow | [Platform overview](docs/00-platform-overview.md) |
-| 🔑 MKP access | Connect VPN, configure kubeconfig, authenticate | [Access and OIDC](docs/12-mkp-access-oidc.md) |
-| ☸️ Kubernetes | Switch contexts, inspect workloads, deploy NGINX | [Contexts](docs/01-kubernetes-contexts.md), [NGINX](docs/02-nginx-static-site.md) |
-| 🌐 Networking | Publish applications through MTS DNS and ingress | [DNS and ingress](docs/13-mkp-dns-ingress.md) |
-| 🔐 Authorization | Understand OIDC, RBAC, and secret safety | [Security and RBAC](docs/14-mkp-security-rbac.md) |
-| 🛠️ Pipeline operations | Diagnose Jenkins and trace digest handoff to Spinnaker | [Jenkins troubleshooting](docs/15-jenkins-troubleshooting.md), [Spinnaker handoff](docs/16-spinnaker-image-handoff.md) |
-| 📊 Operations | Inspect health, logs, events, and rollout state | [Observability](docs/17-mkp-observability.md) |
-| 💾 Reliability | Understand persistence, backups, and recovery ownership | [Storage and backup](docs/18-mkp-storage-backup.md) |
-| ✅ Release readiness | Validate an application before an MKP deployment | [Release checklist](docs/19-mkp-release-checklist.md) |
-| 🧰 Jenkins | Build Java, Python, generic, and Node images | [Jenkins guide](docs/03-jenkins-getting-started.md) and stack demos |
-| 🚢 Spinnaker | Bake Kustomize manifests and deploy to Kubernetes | [Spinnaker guide](docs/08-spinnaker-kubernetes.md) |
-| 🗄️ Data services | Provision PostgreSQL and Redis with KubeBlocks | [Database guide](docs/09-kubeblocks-databases.md), [Redis guide](docs/10-kubeblocks-redis.md) |
-| 🪣 Object storage | Provision MinIO and create multiple buckets | [MinIO guide](docs/11-kubeblocks-minio.md) |
+| 🚀 Platform start | Understand the MTS application-delivery flow | [Platform overview](docs/19-platform-overview.md) |
+| 🔑 MKP access | Connect VPN, configure kubeconfig, authenticate | [Access and OIDC](docs/07-mkp-access-oidc.md) |
+| ☸️ Kubernetes | Switch contexts, inspect workloads, deploy NGINX | [Contexts](docs/18-kubernetes-contexts.md), [NGINX](docs/17-nginx-static-site.md) |
+| 🌐 Networking | Publish applications through MTS DNS and ingress | [DNS and ingress](docs/06-mkp-dns-ingress.md) |
+| 🔐 Authorization | Understand OIDC, RBAC, and secret safety | [Security and RBAC](docs/05-mkp-security-rbac.md) |
+| 🛠️ Pipeline operations | Diagnose Jenkins and trace digest handoff to Spinnaker | [Jenkins troubleshooting](docs/04-jenkins-troubleshooting.md), [Spinnaker handoff](docs/03-spinnaker-image-handoff.md) |
+| 📊 Operations | Inspect health, logs, events, and rollout state | [Observability](docs/02-mkp-observability.md) |
+| 💾 Reliability | Understand persistence, backups, and recovery ownership | [Storage and backup](docs/01-mkp-storage-backup.md) |
+| ✅ Release readiness | Validate an application before an MKP deployment | [Release checklist](docs/00-mkp-release-checklist.md) |
+| 🧰 Jenkins | Build Java, Python, generic, and Node images | [Jenkins guide](docs/16-jenkins-getting-started.md) and stack demos |
+| 🚢 Spinnaker | Bake Kustomize manifests and deploy to Kubernetes | [Spinnaker guide](docs/11-spinnaker-kubernetes.md) |
+| 🗄️ Data services | Provision PostgreSQL and Redis with KubeBlocks | [Database guide](docs/10-kubeblocks-databases.md), [Redis guide](docs/09-kubeblocks-redis.md) |
+| 🪣 Object storage | Provision MinIO and create multiple buckets | [MinIO guide](docs/08-kubeblocks-minio.md) |
 
 ## Delivery flow
 

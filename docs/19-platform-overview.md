@@ -47,12 +47,12 @@ project: demo
 
 | If you want to… | Start here |
 |---|---|
-| Learn MKP access and commands | [Kubernetes contexts](01-kubernetes-contexts.md) |
-| Deploy a first workload without a pipeline | [NGINX static site](02-nginx-static-site.md) |
-| Build an application image | [Jenkins getting started](03-jenkins-getting-started.md) |
-| Deploy an image through Spinnaker | [Spinnaker and Kubernetes](08-spinnaker-kubernetes.md) |
-| Add persistent data | [PostgreSQL](09-kubeblocks-databases.md), [Redis](10-kubeblocks-redis.md) |
-| Add S3-compatible storage | [MinIO](11-kubeblocks-minio.md) |
+| Learn MKP access and commands | [Kubernetes contexts](18-kubernetes-contexts.md) |
+| Deploy a first workload without a pipeline | [NGINX static site](17-nginx-static-site.md) |
+| Build an application image | [Jenkins getting started](16-jenkins-getting-started.md) |
+| Deploy an image through Spinnaker | [Spinnaker and Kubernetes](11-spinnaker-kubernetes.md) |
+| Add persistent data | [PostgreSQL](10-kubeblocks-databases.md), [Redis](09-kubeblocks-redis.md) |
+| Add S3-compatible storage | [MinIO](08-kubeblocks-minio.md) |
 
 ## Important terms
 

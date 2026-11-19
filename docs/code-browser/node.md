@@ -1,6 +1,6 @@
 # 💻 Browser IDE: Node.js
 
-Welcome to the copyable source browser for the [Node.js tutorial](../07-jenkins-node.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
+Welcome to the copyable source browser for the [Node.js tutorial](../12-jenkins-node.md). Expand a file to read it. Select the code block's copy action, then save it using the displayed path.
 
 > [!NOTE]
 > This page requires no JavaScript. If Outline removes HTML details elements, the file contents remain visible as ordinary Markdown code blocks.
